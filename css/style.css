@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    height: 100%;
+}
+body{
+    padding: 3% 3% 5%;
+    min-height: 100%;
+    background-color: aliceblue;
+    font-weight: bold;
+    display: grid;
+    grid-template-rows: auto;
+}
+
+/* cabecera */
+header{}
+header>h1{
+    text-align: center;
+    font-size: 2.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: .1rem .3rem .1rem black;
+    color: #3aa7a3;
+}
+header>h2{
+    text-align: center;
+    font-size: 2rem;
+    color: blueviolet;
+}
+header>p{
+    text-align: end;
+}
+
+/* menu de navegacion */
+nav{}
+nav>ul{
+    width: 100%;
+    margin: 5% auto;
+    background-color: #9DD9D2;
+    padding: 3%;
+    border-radius: 1rem;
+}
+
+nav>ul>li{
+    background-color: antiquewhite;
+    margin: 5% 3%;
+    padding: 2%;
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+nav>ul >li:hover{
+    background-color: #3aa7a3;
+    color: red;
+}
+nav>ul> li >a{
+    text-decoration: none;
+    color: black;
+    text-shadow: .1rem .1rem .1rem #9DD9D2;
+}
+nav>ul>li >a:hover{
+    color: white;
+}
+
+/* contenido principal */
+main{
+    
+}
+main>section>section{
+    display: flex;
+    align-items: center;
+}
+main>section>section>button{
+    border: none;
+    background-color: #3aa7a3;
+    padding: 1%;
+    border-radius: 50%;
+    height: 5vh;
+}
+main>section>section>button>a{
+    color: white;
+}
+main>section>section>h3{
+    font-size: 2.5rem;
+    margin: 3%;
+    color: brown;
+    text-shadow: .1rem .1rem .1rem black;
+}
+main>section>p{
+    font-size: 2rem;
+    margin: 3%;
+    text-align: justify;
+}
+main>section>img{
+    width: 100%;
+}
+main>section>li>span{
+    font-size: 2rem;
+    color: rgba(0, 0, 255, 0.733);
+}
+main>section>li{
+    font-size: 1.5rem;
+    margin: 1% 0;
+}
+
+@media (min-width:768px) and (max-width:1023px){
+    header>h1{
+        font-size: 3rem;
+    }
+
+    main>section>section>h3{
+        font-size: 3.5rem;
+    }
+    main>section>p{
+        font-size: 3rem;
+    }
+
+    main>section>li>span{
+        font-size: 2.5rem;
+    }
+    main>section>li{
+        font-size: 2rem;
+    }
+}
+
+@media (min-width:1024px){
+    body{
+        padding: 2% 5%;
+
+    }
+    
+    /* cabecera */
+header{}
+header>h1{
+    font-size: 2.3rem;
+}
+header>h2{
+    font-size: 2rem;
+}
+
+
+/* menu de navegacion */
+nav{}
+nav>ul{
+    width: 100%;
+    margin: 1% auto;
+    padding: 1%;
+}
+
+nav>ul>li{
+    margin: 1%;
+    padding: 1%;
+}
+
+
+/* contenido principal */
+main{
+    
+}
+
+
+main>section>section>h3{
+    margin: 1%;
+}
+main>section>p{
+    margin: 1%;
+}
+main >section{
+    text-align: center;
+}
+main>section>img{
+    width: 40%;
+}
+main>section>li{
+    text-align: start;
+    margin: 1% 2%;
+}
+
+}
